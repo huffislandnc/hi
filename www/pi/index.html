@@ -29,8 +29,8 @@
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css?ver=4.7.4' type='text/css' media='all' />
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='../style.css?ver=1782762328' type='text/css' media='all' id="belchertownStyle" />
-        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1782762328' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../style.css?ver=1782826826' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='../belchertown-dark.min.css?ver=1782826826' type='text/css' media='all' id="belchertownStyle" />
 
         <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
         <link rel="apple-touch-icon" href="../images/station.png">
@@ -53,7 +53,7 @@
         <script type='text/javascript' src='//code.highcharts.com/10/modules/exporting.js'></script>
         <script type='text/javascript' src='//code.highcharts.com/10/modules/solid-gauge.js'></script>
         <script type='text/javascript' src='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='../js/belchertown.js?1782762328'></script>
+        <script type='text/javascript' src='../js/belchertown.js?1782826826'></script>
         <script>
             // Set the session variables for the theme
             if ( sessionStorage.getItem('pi_theme') === null ) {
@@ -85,9 +85,9 @@
         ajaxforecast(); // Initial call to load forecast data like 8 day outlook, weather icon and observation text
         
         jQuery(document).ready(function() {
-            get_outTemp_color( "degree_F", "96.6" );
+            get_outTemp_color( "degree_F", "79.6" );
             
-            rotateThis( "336" );
+            rotateThis( "339" );
             
         });
         
@@ -119,16 +119,16 @@
                 
                 <div class="col-xs-6 temp-observation">
                     <div class="obs-group">
-                        <img id="wxicon" src="../images/partly-cloudy-day.png"><!-- AJAX -->
-                        <div class="outtemp_outer"><span class="outtemp">96.6</span><sup class="outtempunitlabelsuper"> &#176;F</sup></div><!-- AJAX -->
-                        <div class="current-obs-text">Partly Cloudy</div><!-- AJAX -->
+                        <img id="wxicon" src="../images/mostly-cloudy-day.png"><!-- AJAX -->
+                        <div class="outtemp_outer"><span class="outtemp">79.6</span><sup class="outtempunitlabelsuper"> &#176;F</sup></div><!-- AJAX -->
+                        <div class="current-obs-text">Mostly Cloudy</div><!-- AJAX -->
                     </div>
                     <div class="clear"></div>
                 
                     <div class="tempstats">
-                        <div class="feelslike">Feels like: 105.4 &#176;F</div><!-- AJAX -->
+                        <div class="feelslike">Feels like: 89.1 &#176;F</div><!-- AJAX -->
                         <div class="highlow">
-                            High <span class="high">98.1 &#176;F</span> | Low <span class="low">70.7 &#176;F</span>
+                            High <span class="high">79.7 &#176;F</span> | Low <span class="low">75.2 &#176;F</span>
                         </div><!-- AJAX -->
                     </div>
                     
@@ -138,13 +138,13 @@
                                 <tr>
                                     <td class='station-observations-label'>Outside Humidity</td>
                                     <td>
-                                        <span class="outHumidity">48%</span><!-- AJAX -->
+                                        <span class="outHumidity">85%</span><!-- AJAX -->
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class='station-observations-label'>Dew Point</td>
                                     <td>
-                                        <span class="dewpoint">73.6 &#176;F</span><!-- AJAX -->
+                                        <span class="dewpoint">74.6 &#176;F</span><!-- AJAX -->
                                     </td>
                                 </tr>                            
                                 <tr>
@@ -158,16 +158,16 @@
                                 <tr>
                                     <td class='station-observations-label'>Barometer</td>
                                     <td>
-                                        <span class="barometer">29.347 inHg</span><!-- AJAX -->
+                                        <span class="barometer">29.463 inHg</span><!-- AJAX -->
                                         <span class="pressure-trend">
-                                            <i class="fa fa-arrow-down barometer-down"></i>
+                                            <i class="fa fa-arrow-up barometer-up"></i>
                                         </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class='station-observations-label'>UV Index</td>
                                     <td>
-                                        <span class="UV">4.4</span><!-- AJAX -->
+                                        <span class="UV">0.1</span><!-- AJAX -->
                                         <!-- AJAX -->
                                     </td>
                                 </tr>
@@ -185,7 +185,7 @@
                                     NNW
                                     </span>
                                     <span class="curwinddeg">
-                                    336&#176;
+                                    339&#176;
                                 </span>
                             </div>
                             <div class="arrow"></div>
@@ -201,12 +201,12 @@
                             <tr>
                                 <td>
                                     <span class="curwindspeed">
-                                        1.4
+                                        1.1
                                     </span>
                                 </td><!-- AJAX -->
                                 <td class="border-left">&nbsp;
                                     <span class="curwindgust">
-                                        3.6
+                                        3.1
                                     </span>
                                 </td><!-- AJAX -->
                             </tr>
@@ -214,7 +214,7 @@
                     </table>
                     
                     <div class="maxgustouter">
-                        Today Max: <span class="dailymaxgust">5 mph</span> <!-- AJAX -->
+                        Today Max: <span class="dailymaxgust">4 mph</span> <!-- AJAX -->
                     </div>
                 
                 
@@ -224,7 +224,7 @@
                                 <td colspan="2">
                                     <div class="row small-almanac">
                                         <div class="col-sm-5 sun">
-                                            <span class="sunrise-set-image"><img src="../images/sunrise.png"></span><span class="sunrise-value">6:11 AM</span><!-- AJAX -->
+                                            <span class="sunrise-set-image"><img src="../images/sunrise.png"></span><span class="sunrise-value">6:12 AM</span><!-- AJAX -->
                                             &nbsp;
                                             <span class="sunrise-set-image"><img src="../images/sunset.png"></span><span class="sunset-value">8:42 PM</span><!-- AJAX -->
                                         </div>
