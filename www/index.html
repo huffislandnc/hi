@@ -28,8 +28,8 @@
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
         <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css?ver=4.7.4' type='text/css' media='all' />
         <link rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' type='text/css' media='all' />
-        <link rel='stylesheet' href='./style.css?ver=1782826826' type='text/css' media='all' id="belchertownStyle" />
-        <link rel='stylesheet' href='./belchertown-dark.min.css?ver=1782826826' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='./style.css?ver=1782937529' type='text/css' media='all' id="belchertownStyle" />
+        <link rel='stylesheet' href='./belchertown-dark.min.css?ver=1782937529' type='text/css' media='all' id="belchertownStyle" />
 
         <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
         <link rel="apple-touch-icon" href="./images/station.png">
@@ -52,7 +52,7 @@
         <script type='text/javascript' src='//code.highcharts.com/10/modules/exporting.js'></script>
         <script type='text/javascript' src='//code.highcharts.com/10/modules/solid-gauge.js'></script>
         <script type='text/javascript' src='//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='./js/belchertown.js?1782826826'></script>
+        <script type='text/javascript' src='./js/belchertown.js?1782937529'></script>
         <script>
             // Set the session variables for the theme
             if ( sessionStorage.getItem('theme') === null ) {
@@ -77,7 +77,7 @@
                     <div class="title-area">
                         <p class="site-title" itemprop="headline">
                             <a href="./">
-                                huffisland
+                                <img src="/images/huffisland_logo_dark.png" id="logo_image" title="Mountain Island Lake, NC Weather Conditions" alt="Mountain Island Lake, NC Weather Conditions">
                             </a>
                         </p>
                     </div>
@@ -125,12 +125,12 @@
             jQuery(document).ready(function() {
 
 
-                get_outTemp_color( "degree_F", "79.6" );
+                get_outTemp_color( "degree_F", "102.8" );
             
-                rotateThis( "339" );
+                rotateThis( "308" );
 
                 // Update the Last Updated timestamp with moment.js,
-                updated = tzAdjustedMoment( 1782826800 ).format("LL, LTS");
+                updated = tzAdjustedMoment( 1782937500 ).format("LL, LTS");
                 updated_text = "Last Updated " + updated;
                 jQuery(".updated").html( updated_text );
             
@@ -151,7 +151,7 @@
 
                         
                 // Update the Last Updated timestamp with moment.js,
-                updated = tzAdjustedMoment( 1782826800 ).format("LL, LTS");
+                updated = tzAdjustedMoment( 1782937500 ).format("LL, LTS");
                 updated_text = "Last Updated " + updated;
                 jQuery(".updated").html( updated_text );
             
@@ -180,7 +180,7 @@
                 <!-- Top bar with city and share -->
                 <div class="wx-stn-info-container">
                     <div class="wx-stn-name">
-                        <h1>My Station Weather Conditions</h1>                    
+                        <h1>Weather Conditions at the Island</h1>                    
                     </div>
                     <div class="wx-stn-info">
                         Observations are powered by a Personal Weather Station
@@ -208,20 +208,20 @@
                             <div class="weather-obs-top">
                                 <div class="row temp-observation">
                                     <div class="col-sm-6 current_obs_top">
-                                        <img id="wxicon" src="./images/mostly-cloudy-day.png">
+                                        <img id="wxicon" src="./images/partly-cloudy-day.png">
                                     </div>
                                     <div class="col-sm-6 current_temp">
-                                        <div class="outtemp_outer"><span class="outtemp">79.6</span><sup class="outtempunitlabelsuper"> &#176;F</sup></div><!-- AJAX -->
+                                        <div class="outtemp_outer"><span class="outtemp">102.8</span><sup class="outtempunitlabelsuper"> &#176;F</sup></div><!-- AJAX -->
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6 current-obs-container">
                                         <div class="current-obs-text">
-                                            Mostly Cloudy
+                                            Partly Cloudy
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="feelslike">Feels like: 89.1 &#176;F</div><!-- AJAX -->
+                                        <div class="feelslike">Feels like: 109.6 &#176;F</div><!-- AJAX -->
                                         <div class="stn-high-low">
                                             <table class="stn-high-low-table">
                                                 <tbody>
@@ -230,8 +230,8 @@
                                                         <td class="stn-high-low-table-title border-left">Low</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="high">79.7 &#176;F</td>
-                                                        <td class="border-left low">75.2 &#176;F</td>
+                                                        <td class="high">103.8 &#176;F</td>
+                                                        <td class="border-left low">73.9 &#176;F</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -250,10 +250,10 @@
                                         <div class="compass">
                                             <div class="direction">
                                                 <span class="curwinddir">
-                                                NNW
+                                                NW
                                                 </span>
                                                 <span class="curwinddeg">
-                                                339&#176;
+                                                308&#176;
                                                 </span>
                                             </div>
                                             <div class="arrow"></div>
@@ -269,12 +269,12 @@
                                                 <tr>
                                                     <td>
                                                         <span class="curwindspeed">
-                                                            1
+                                                            2
                                                         </span>
                                                     </td>
                                                     <td class="border-left gust">&nbsp;
                                                         <span class="curwindgust">
-                                                            3
+                                                            4
                                                         </span>
                                                     </td>
                                                 </tr>
@@ -295,7 +295,7 @@
                         <div class="station-observations weather-obs-top">
                             <table cellpadding="0" cellspacing="0">
                                 <tbody>
-                                    <tr><td class='station-observations-label'>Barometer</td><td><span class=barometer>29.463 inHg</span><!-- AJAX --> <span class="pressure-trend"><i class="fa fa-arrow-up barometer-up"></i></span></td></tr><tr><td class='station-observations-label'>Dew Point</td><td><span class=dewpoint>74.6 &#176;F</span><!-- AJAX --></td></tr><tr><td class='station-observations-label'>Outside Humidity</td><td><span class=outHumidity>85%</span><!-- AJAX --></td></tr><tr><td class='station-observations-label'>Rain</td><td><span class='dayRain'>0.00 in</span><!-- AJAX -->&nbsp;<span class='border-left'>&nbsp;</span><span class='rainRate'>0.00 in/hr</span><!-- AJAX --></td></tr>
+                                    <tr><td class='station-observations-label'>Barometer</td><td><span class=barometer>29.345 inHg</span><!-- AJAX --> <span class="pressure-trend"><i class="fa fa-arrow-down barometer-down"></i></span></td></tr><tr><td class='station-observations-label'>Dew Point</td><td><span class=dewpoint>70.4 &#176;F</span><!-- AJAX --></td></tr><tr><td class='station-observations-label'>Outside Humidity</td><td><span class=outHumidity>36%</span><!-- AJAX --></td></tr><tr><td class='station-observations-label'>Rain</td><td><span class='dayRain'>0.00 in</span><!-- AJAX -->&nbsp;<span class='border-left'>&nbsp;</span><span class='rainRate'>0.00 in/hr</span><!-- AJAX --></td></tr>
                                 </tbody>
                             </table>
                             <!-- Station Observations Hook -->
@@ -323,7 +323,7 @@
                                                         </span>
                                                         <strong><span class="moon-phase">Full Moon</span></strong><!-- AJAX -->
                                                         <br>
-                                                        <span class="moon-visible"><strong>100%</strong> visible</span><!-- AJAX -->
+                                                        <span class="moon-visible"><strong>97%</strong> visible</span><!-- AJAX -->
                                                     </div>
                                                 </div>
                                                 <div class="clear"></div>
@@ -340,7 +340,7 @@
                                                                 <h4 class="modal-title" id="almanac">Almanac Information</h4>
                                                             </div>
                                                             <div class="almanac-extras-modal-body modal-body">
-<div id='celestial_widget' class='widget'> <div class='widget_contents'> <div id='celestial_details'> <div class='celestial_body'> <table class='celestial'> <tr><th>&#9728; Sun</th><th></th></tr> <tr> <td class='label'>Start civil twilight</td> <td class='data'>05:41:39 AM</td> </tr> <tr> <td class='label'>Rise</td> <td class='data'>06:12:11 AM</td> </tr> <tr> <td class='label'>Transit</td> <td class='data'>01:27:38 PM</td> </tr> <tr> <td class='label'>Set</td> <td class='data'>08:42:57 PM</td> </tr> <tr> <td class='label'>End Civil Twilight</td> <td class='data'>09:13:27 PM</td> </tr> <tr> <td class='label'>Azimuth</td> <td class='data'>87.8&deg;</td> </tr> <tr> <td class='label'>Altitude</td> <td class='data'>39.6&deg;</td> </tr> <tr> <td class='label'>Right ascension</td> <td class='data'>99.6&deg;</td> </tr> <tr> <td class='label'>Declination</td> <td class='data'>23.1&deg;</td> </tr><tr><td class='label'>Equinox</td><td class='data'>09/22/2026 08:05:09 PM</td></tr><tr><td class='label'>Solstice</td><td class='data'>12/21/2026 03:49:59 PM</td></tr><tr> <td class='label'>Total daylight</td> <td class='data'>14 hours, 30 minutes, 45 seconds<br/>26 seconds less than yesterday</td> </tr> </table> </div> <div class='celestial_body'> <table class='celestial'> <tr><th>&#9789; Moon</th><th></th></tr> <tr><td class='label'>&nbsp;</td><td class='data'>&nbsp;</td></tr> <tr> <td class='label'>Rise</td> <td class='data'>09:38:18 PM</td> </tr> <tr> <td class='label'>Transit</td> <td class='data'>01:40:20 AM</td> </tr> <tr> <td class='label'>Set</td> <td class='data'>06:26:49 AM</td> </tr> <tr><td class='label'>&nbsp;</td><td class='data'>&nbsp;</td></tr> <tr> <td class='label'>Azimuth</td> <td class='data'>260.6&deg;</td> </tr> <tr> <td class='label'>Altitude</td> <td class='data'>-35.8&deg;</td> </tr> <tr> <td class='label'>Right ascension</td> <td class='data'>286.1&deg;</td> </tr> <tr> <td class='label'>Declination</td> <td class='data'>-26.5&deg;</td> </tr><tr> <td class='label'>New moon</td> <td class='data'>07/14/2026 05:43:31 AM</td> </tr> <tr> <td class='label'>Full moon</td> <td class='data'>07/29/2026 10:35:37 AM</td> </tr><tr> <td class='label'>Phase</td> <td class='data'>Full Moon<br/> 100% full</td> </tr> </table> </div> </div> </div> </div> <div class='clear'></div><div class='almanac_last_updated'></div>
+<div id='celestial_widget' class='widget'> <div class='widget_contents'> <div id='celestial_details'> <div class='celestial_body'> <table class='celestial'> <tr><th>&#9728; Sun</th><th></th></tr> <tr> <td class='label'>Start civil twilight</td> <td class='data'>05:42:09 AM</td> </tr> <tr> <td class='label'>Rise</td> <td class='data'>06:12:46 AM</td> </tr> <tr> <td class='label'>Transit</td> <td class='data'>01:27:50 PM</td> </tr> <tr> <td class='label'>Set</td> <td class='data'>08:42:44 PM</td> </tr> <tr> <td class='label'>End Civil Twilight</td> <td class='data'>09:13:20 PM</td> </tr> <tr> <td class='label'>Azimuth</td> <td class='data'>264.5&deg;</td> </tr> <tr> <td class='label'>Altitude</td> <td class='data'>49.8&deg;</td> </tr> <tr> <td class='label'>Right ascension</td> <td class='data'>100.9&deg;</td> </tr> <tr> <td class='label'>Declination</td> <td class='data'>23.1&deg;</td> </tr><tr><td class='label'>Equinox</td><td class='data'>09/22/2026 08:05:09 PM</td></tr><tr><td class='label'>Solstice</td><td class='data'>12/21/2026 03:49:59 PM</td></tr><tr> <td class='label'>Total daylight</td> <td class='data'>14 hours, 29 minutes, 58 seconds<br/>29 seconds less than yesterday</td> </tr> </table> </div> <div class='celestial_body'> <table class='celestial'> <tr><th>&#9789; Moon</th><th></th></tr> <tr><td class='label'>&nbsp;</td><td class='data'>&nbsp;</td></tr> <tr> <td class='label'>Rise</td> <td class='data'>10:14:28 PM</td> </tr> <tr> <td class='label'>Transit</td> <td class='data'>02:30:10 AM</td> </tr> <tr> <td class='label'>Set</td> <td class='data'>07:26:15 AM</td> </tr> <tr><td class='label'>&nbsp;</td><td class='data'>&nbsp;</td></tr> <tr> <td class='label'>Azimuth</td> <td class='data'>62.2&deg;</td> </tr> <tr> <td class='label'>Altitude</td> <td class='data'>-67.4&deg;</td> </tr> <tr> <td class='label'>Right ascension</td> <td class='data'>303.5&deg;</td> </tr> <tr> <td class='label'>Declination</td> <td class='data'>-22.8&deg;</td> </tr><tr> <td class='label'>New moon</td> <td class='data'>07/14/2026 05:43:31 AM</td> </tr> <tr> <td class='label'>Full moon</td> <td class='data'>07/29/2026 10:35:37 AM</td> </tr><tr> <td class='label'>Phase</td> <td class='data'>Full Moon<br/> 97% full</td> </tr> </table> </div> </div> </div> </div> <div class='clear'></div><div class='almanac_last_updated'></div>
                                                             </div><!-- AJAX -->
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -365,7 +365,7 @@
                 
                 <!-- Start of index_hook_after_station_info row -->
                 <div class="row index-hook-after-station-info border-bottom">
-<img src=lake.jpg alt=curret view at Huffisland">
+<img src=./images/lake.jpg alt=curret view at Huffisland">
                 </div>
                 <!-- End of index_hook_after_station_info row -->
 
@@ -419,12 +419,12 @@
                                 </div>
                                 <table>
                                     <tr>
-                                        <td><b>High:</b></td>    <td><span class="dailystatshigh">79.7 &#176;F</span></td><!-- AJAX -->
-                                        <td><b>Low:</b></td>    <td><span class="dailystatslow">75.2 &#176;F</span></td><!-- AJAX -->
+                                        <td><b>High:</b></td>    <td><span class="dailystatshigh">103.8 &#176;F</span></td><!-- AJAX -->
+                                        <td><b>Low:</b></td>    <td><span class="dailystatslow">73.9 &#176;F</span></td><!-- AJAX -->
                                     </tr>
                                     <tr>
                                         <td><b>Average Wind:</b></td>    <td><span class="dailystatswindavg">1 mph</span></td><!-- AJAX -->
-                                        <td><b>Highest Wind:</b></td>        <td><span class="dailystatswindmax">4 mph</span></td><!-- AJAX -->                    
+                                        <td><b>Highest Wind:</b></td>        <td><span class="dailystatswindmax">7 mph</span></td><!-- AJAX -->                    
                                     </tr>
                                     <tr>
                                         <td><b>Today's Rain:</b></td>    <td><span class="dailystatsrain">0.00 in</span></td><!-- AJAX -->
@@ -440,12 +440,12 @@
                                 </div>
                                 <table>
                                     <tr>
-                                        <td><b>High:</b></td>    <td><span class="monthstatshigh">99.5 &#176;F</span></td><!-- AJAX -->
-                                        <td><b>Low:</b></td>    <td><span class="monthstatslow">54.9 &#176;F</span></td><!-- AJAX -->
+                                        <td><b>High:</b></td>    <td><span class="monthstatshigh">103.8 &#176;F</span></td><!-- AJAX -->
+                                        <td><b>Low:</b></td>    <td><span class="monthstatslow">73.9 &#176;F</span></td><!-- AJAX -->
                                     </tr>
                                     <tr>
                                         <td><b>Average Wind:</b></td>    <td><span class="monthstatswindavg">1 mph</span></td><!-- AJAX -->
-                                        <td><b>Highest Wind:</b></td>        <td><span class="monthstatswindmax">22 mph</span></td><!-- AJAX -->
+                                        <td><b>Highest Wind:</b></td>        <td><span class="monthstatswindmax">7 mph</span></td><!-- AJAX -->
                                     </tr>
                                     <tr>
                                         <td><b>Total Rain:</b></td>        <td><span class="monthstatsrain">0.00 in</span></td><!-- AJAX -->
@@ -485,7 +485,7 @@
 			<div class="wrap">
                 <div class="row">
                     <div class="col-sm-4 footerLeft">
-                        Copyright &copy; 2026 My Weather Website
+                        Copyright &copy; 2026 huffisland.com
                     </div>
                     <div class="col-sm-5 footerCenter">
                         <strong>Never make important decisions from this website.</strong>
@@ -500,7 +500,7 @@
 		<script type='text/javascript' src='./js/responsive-menu.js'></script>
 		
 		<!-- Belchertown Skin Version: 1.3.1 -->
-        <!-- Page Generated: 06/30/2026 09:40:00 AM -->
+        <!-- Page Generated: 07/01/2026 04:25:00 PM -->
 
     </body>
 </html>

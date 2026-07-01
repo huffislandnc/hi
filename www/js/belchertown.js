@@ -543,6 +543,8 @@ function changeTheme(themeName, toggleOverride = false) {
         jQuery('body').addClass("dark");
         jQuery('body').removeClass("light");
         jQuery("#themeSwitch").prop("checked", true);
+        belchertown_debug("Theme: logo_image_dark is defined.");
+        jQuery("#logo_image").attr("src", "/images/huffisland_logo_dark.png");
         sessionStorage.setItem('currentTheme', 'dark');
     } else if (themeName == "light") {
         // Apply light theme
@@ -550,6 +552,8 @@ function changeTheme(themeName, toggleOverride = false) {
         jQuery('body').addClass("light");
         jQuery('body').removeClass("dark");
         jQuery("#themeSwitch").prop("checked", false);
+        belchertown_debug("Theme: logo_image is defined.");
+        jQuery("#logo_image").attr("src", "/images/huffisland_logo.png");
         sessionStorage.setItem('currentTheme', 'light');
     }
 }
