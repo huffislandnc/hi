@@ -64,8 +64,8 @@
         "chart5": {
             "title": "Lake Temp",
             "type": "spline",
-            "extraTemp1": {
-                "color": "#BECC00",
+            "extraTemp9": {
+                "color": "#40E0D0",
                 "yAxis_tickinterval": "0.01"
             }
         }
