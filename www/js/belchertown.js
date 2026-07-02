@@ -28,7 +28,7 @@ if (getURLvar("debug") && (getURLvar("debug") == "true" || getURLvar("debug") ==
 var moment_locale = "en-US";
 moment.locale(moment_locale);
 
-var graphgroups_raw = {"homepage": ["chart1", "chart2", "chart3", "chart4"], "day": ["chart1", "chart2", "chart3", "chart4"], "week": ["chart1", "chart2", "chart3", "chart4"], "month": ["chart1", "chart2", "chart3", "chart4"], "year": ["chart1", "chart2", "chart3", "chart4"]};
+var graphgroups_raw = {"homepage": ["chart1", "chart2", "chart3", "chart4", "chart5"], "day": ["chart1", "chart2", "chart3", "chart4"], "week": ["chart1", "chart2", "chart3", "chart4"], "month": ["chart1", "chart2", "chart3", "chart4"], "year": ["chart1", "chart2", "chart3", "chart4"]};
 var graphgroups_titles = {"homepage": "Homepage", "day": "Today", "week": "This Week", "month": "This Month", "year": "This Year"};
 var graphpage_content = {};
 
@@ -65,7 +65,7 @@ jQuery(document).ready(function() {
         } else if (window.location.search.indexOf('?theme=auto') === 0) {
             belchertown_debug("Theme: Setting auto theme because of URL override");
             sessionStorage.setItem('theme', 'auto')
-            autoTheme(20, 42, 06, 12)
+            autoTheme(20, 42, 06, 13)
         }
     }
 

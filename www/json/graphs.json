@@ -60,6 +60,14 @@
                 "color": "#BECC00",
                 "yAxis_tickinterval": "0.01"
             }
+        },
+        "chart5": {
+            "title": "Lake Temp",
+            "type": "spline",
+            "extraTemp1": {
+                "color": "#BECC00",
+                "yAxis_tickinterval": "0.01"
+            }
         }
     },
     "day": {
